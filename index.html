@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text to Audio dari PDF</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body style="background-image: url('kelas.jpg'); background-size: cover; background-repeat: no-repeat;">
+  <div class="container">
+    <h1>Text to Audio dari File PDF</h1>
+    <input type="file" id="pdf-upload" accept="application/pdf"/>
+    <button id="play-audio" disabled>Putar Suara</button>
+    <button id="stop-audio">Berhenti</button>
+    <textarea id="text-content" placeholder="Teks dari PDF akan muncul di sini..." readonly></textarea>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
